@@ -3,7 +3,6 @@ const addTaskButton = document.getElementById("addTaskButton");
 const taskListElement = document.getElementById("taskList");
 
 let taskArray = getTasksFromLocalStorage();
-console.log(taskArray)
 
 /*3.1 Implement the getTasksFromLocalStorage() Function*/
 function getTaskFromLocalStorage() {
@@ -15,6 +14,10 @@ function updateTasksInLocalStorage() {
 localStorage.setItem("tasks", JSON.stringify(taskArray));
 
 }
+
+/*3.3 Implement the  createTask(taskText) Function*/
+function createTask(taskText) {
+return {text: taskText, completed: false};};
 
 
 
