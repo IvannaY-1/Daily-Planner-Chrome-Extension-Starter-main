@@ -1,0 +1,91 @@
+body {
+  width: 300px;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+#taskInput:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+#addTaskButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#addTaskButton:hover {
+  background-color: #45a049;
+}
+
+#taskList {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.taskText {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.removeButton:hover {
+  color: darkred;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
