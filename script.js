@@ -19,6 +19,14 @@ localStorage.setItem("tasks", JSON.stringify(taskArray));
 function createTask(taskText) {
 return {text: taskText, completed: false};};
 
+/*3.4 Implement the deleteTask(index) Function*/
+ function deleteTask(index) {
+   taskArray.splice(index, 1);
+   updateTasksInLocalStorage();
+}
+
+
+
 
 
 
