@@ -4,6 +4,14 @@ const taskListElement = document.getElementById("taskList");
 
 let taskArray = getTasksFromLocalStorage();
 
+/*Step 3: Create Functions for Task Operations*/
+function getTaskFromLocalStorage() {
+return JSON.parse(localStorage.getItem("tasks")) || [];
+ }
+
+
+
+
 
 
 // 3.5 Implement the createTaskElement(taskObj) Function
