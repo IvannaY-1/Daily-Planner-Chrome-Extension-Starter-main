@@ -2,7 +2,6 @@ const taskInput = document.getElementById("taskInput");
 const addTaskButton = document.getElementById("addTaskButton");
 const taskListElement = document.getElementById("taskList");
 
-let taskArray = getTasksFromLocalStorage();
 
 /*3.1 Implement the getTasksFromLocalStorage() Function*/
 function getTaskFromLocalStorage() {
@@ -25,16 +24,7 @@ return {text: taskText, completed: false};};
    updateTasksInLocalStorage();
 }
 
-
-
-
-
-
-
-
-/*
-
-// 3.5 Implement the createTaskElement(taskObj) Function
+/*3.5 Implement the createTaskElement(taskObj) Function*/
 function createTaskElement(taskObj) {
     const taskItem = document.createElement("li");
     taskItem.classList.add("taskItem");
@@ -68,4 +58,32 @@ function createTaskElement(taskObj) {
   
     return taskItem;
 }
-*/
+
+/*4: Step 6: Implement the Render Tasks Function*/
+functiron renderTasks() {
+   taskList.innerHTML = ("");
+for (let 1=0; i<taskList.length, i++) {
+createTaskElement(taskArray[i]);
+return (taskElement);
+taskList.appendChild(taskElement);
+}
+}
+
+/*5: Attach an Event Listener to Add Task Button*/
+addTaskButton.addEventListener("click", function() {
+ const taskText = taskInput.value;
+if (taskText ==="") return;
+const newTask = createTask(taskText);
+taskArray.push(newTask);
+updateTasksInLocalStorage(taskArray);
+taskInput.value = "";
+renderTasks();
+});
+
+
+     
+
+
+
+
+
