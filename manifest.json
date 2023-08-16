@@ -1,11 +1,11 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Daily Planner",
   "version": "1.0",
   "description": "A simple daily planner chrome extension.",
-  /*"browser_action": {
+  "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "index.html"
-  },*/
+  }, 
   "permissions": ["storage"]
 }
